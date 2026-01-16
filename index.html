@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leones de Fuego - 23° Aniversario Harakmbut</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Raleway:wght@300;400;600;700&family=Playfair+Display:wght@400;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- EFECTOS DE PARTÍCULAS -->
+    <div id="particles-js"></div>
+    
+    <!-- FUEGO ANIMADO -->
+    <div class="fire-border top"></div>
+    <div class="fire-border bottom"></div>
+    <div class="fire-border left"></div>
+    <div class="fire-border right"></div>
+    
+    <!-- EFECTO DE CHISPAS -->
+    <div class="sparkle-overlay"></div>
+    
+    <!-- NUEVO HEADER CON DISEÑO DE IMAGEN -->
+    <header class="epic-header-new">
+        <div class="header-top-line"></div>
+        
+        <div class="container">
+            <div class="header-content-new">
+                <!-- TÍTULO CON FUEGOS -->
+                <div class="header-title-section">
+                    <div class="header-fire-left">🔥</div>
+                    <h1 class="header-title">TOBAS HARAKMBUT - SAN JERÓNIMO</h1>
+                    <div class="header-fire-right">🔥</div>
+                </div>
+                
+                <!-- LOGO DEL BLOQUE -->
+                <div class="header-logo-section">
+                    <img src="assets/logo.png" alt="Logo Harakmbut" class="header-logo">
+                </div>
+                
+                <!-- CONTADOR DE AÑOS INTERACTIVO -->
+                <div class="years-counter-new">
+                    <div class="counter-number-new" id="yearsCount">0</div>
+                    <div class="counter-label-new">AÑOS DE ARCO Y FLECHA</div>
+                </div>
+                
+                <!-- MENÚ DE NAVEGACIÓN -->
+                <nav class="golden-nav-new">
+                    <a href="#historia" class="nav-link-new">
+                        <i class="fas fa-landmark"></i>
+                        <span>Nuestra Historia</span>
+                    </a>
+                    <a href="#galeria" class="nav-link-new">
+                        <i class="fas fa-images"></i>
+                        <span>Galería</span>
+                    </a>
+                    <a href="#invitacion" class="nav-link-new highlight">
+                        <i class="fas fa-crown"></i>
+                        <span>OBTENER INVITACIÓN</span>
+                    </a>
+                    <a href="#evento" class="nav-link-new">
+                        <span>Celebración</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION CON EFECTO DE FUEGO -->
+    <section class="hero-section">
+        <div class="fire-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text animate__animated animate__fadeInUp">
+                    <h2 class="hero-title">
+                        <span class="hero-highlight">MÁS DE 23 AÑOS</span><br>
+                        <span class="hero-subtitle">ENCENDIENDO LA PASIÓN DE LA TRADICIÓN</span>
+                    </h2>
+                    <p class="hero-description">
+                        <strong>¡ESTAMOS DE ANIVERSARIO!</strong> Como bloque Harakmbut "Leones de Fuego", 
+                        celebramos 23 años manteniendo viva la llama de nuestra cultura. 
+                        Desde 2003, siendo guardianes del fuego que ilumina San Jerónimo y fortalece nuestra identidad.
+                        <br><br>
+                        <strong>¡TE INVITAMOS A CELEBRAR CON NOSOTROS!</strong> Tenemos una invitación especial 
+                        para que nos acompañes en esta gran celebración de nuestro 23° aniversario. 
+                        ¡Ven y sé parte de esta tradición que sigue creciendo!
+                    </p>
+                    
+                    <!-- ESTADÍSTICAS -->
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <div class="stat-number">23</div>
+                            <div class="stat-label">AÑOS DE TRADICIÓN</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8400+</div>
+                            <div class="stat-label">DÍAS DE PASIÓN</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">LEONES ACTIVOS</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CONTADOR CORREGIDO (FALTA MENOS DE 24 HORAS) -->
+                <div class="countdown-box">
+                    <h3><i class="fas fa-fire"></i> ¡MAÑANA ES EL GRAN DÍA!</h3>
+                    <p class="countdown-subtitle">Celebración del 23° Aniversario: <strong>17 de Enero 2026</strong></p>
+                    <div class="countdown" id="mainCountdown">
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="cd-hours">00</div>
+                            <div class="countdown-label">HORAS</div>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="cd-minutes">00</div>
+                            <div class="countdown-label">MINUTOS</div>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="cd-seconds">00</div>
+                            <div class="countdown-label">SEGUNDOS</div>
+                        </div>
+                    </div>
+                    <p class="countdown-note">¡La celebración se realizará junto a otras actividades en San Jerónimo!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE INVITACIÓN -->
+    <section class="invitation-section" id="invitacion">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-gold">INVITACIÓN ESPECIAL</span>
+                    <span class="title-fire">23° ANIVERSARIO HARAKMBUT</span>
+                </h2>
+                <p class="section-subtitle">
+                    <strong>¡ÚNETE A NUESTRA CELEBRACIÓN!</strong> Como integrante del bloque Leones de Fuego, 
+                    genera tu invitación personalizada para el gran festejo de nuestro 23° aniversario. 
+                    ¡Celebraremos juntos esta tradición que nos une!
+                </p>
+            </div>
+            
+            <!-- CONTENEDOR SOLO CON FORMULARIO -->
+            <div class="invitation-solo">
+                <div class="generator-premium">
+                    <!-- TARJETA PREMIUM (OCULTA, SOLO PARA GENERAR) -->
+                    <div class="premium-card-hidden" id="premiumCard">
+                        <div class="card-inner">
+                            <!-- ENCABEZADO DE TARJETA -->
+                            <div class="card-header-premium">
+                                <div class="card-logo">
+                                    <i class="fas fa-crown"></i>
+                                    <span>MASHCOPIRO HARAKMBUT</span>
+                                </div>
+                                <div class="card-badge">INVITACIÓN VIP</div>
+                            </div>
+                            
+                            <!-- CUERPO DE TARJETA -->
+                            <div class="card-body-premium">
+                                <div class="anniversary-glowing">
+                                    <div class="glow-number">23</div>
+                                    <div class="glow-text">
+                                        <span>ANIVERSARIO</span>
+                                        <span>2003-2026</span>
+                                    </div>
+                                </div>
+
+
+
+
+                                
+                                <!-- NOMBRE DEL INVITADO -->
+                                <div class="invited-name" id="cardName">
+                                    <div class="name-label">INVITADO ESPECIAL DEL BLOQUE</div>
+                                    <div class="name-value">[TU NOMBRE AQUÍ]</div>
+                                </div>
+                                
+                                <!-- DETALLES DEL EVENTO ACTUALIZADOS -->
+                                <div class="event-details-premium">
+                                    <div class="event-date">
+                                        <i class="fas fa-calendar-day"></i>
+                                        <div>
+                                            <strong>SÁBADO 17 ENERO 2026</strong>
+                                            <span>23° Aniversario Leones de Fuego</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="event-schedule">
+                                        <div class="schedule-item">
+                                            <i class="fas fa-sun"></i>
+                                            <div>
+                                                <strong>PASACALLE ANIVERSARIO</strong>
+                                                <span>14:00 HORAS</span>
+                                                <small>Concentración: Cajonahuaylla - San Jerónimo</small>
+                                            </div>
+                                        </div>
+                                        <div class="schedule-item">
+                                            <i class="fas fa-moon"></i>
+                                            <div>
+                                                <strong>GRAN CELEBRACIÓN</strong>
+                                                <span>19:00 HORAS</span>
+                                                <small>Local Señorial - Calle Romeritos</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="event-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div>
+                                            <strong>CELEBRACIÓN EN SAN JERÓNIMO</strong>
+                                            <span>Evento se realizará junto a otras actividades culturales</span>
+                                            <small>San Jerónimo - Cusco</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- PIE DE TARJETA -->
+                            <div class="card-footer-premium">
+                                <div class="footer-seal">
+                                    <i class="fas fa-paw"></i>
+                                    <span>INVITACIÓN PERSONAL DEL BLOQUE • NO TRANSFERIBLE</span>
+                                </div>
+                                <div class="footer-code">INV-LF-23-2026</div>
+                            </div>
+                            
+                            <!-- DECORACIONES PREMIUM -->
+                            <div class="card-decoration corner-tl"></div>
+                            <div class="card-decoration corner-tr"></div>
+                            <div class="card-decoration corner-bl"></div>
+                            <div class="card-decoration corner-br"></div>
+                            <div class="card-glow"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- FORMULARIO DE GENERACIÓN -->
+                    <div class="form-premium">
+                        <div class="form-header">
+                            <h3><i class="fas fa-gem"></i> INVITACIÓN 23° ANIVERSARIO</h3>
+                            <p><strong>¡Celebra con nosotros!</strong> Como integrante de Leones de Fuego Harakmbut, 
+                            accede a tu invitación exclusiva para nuestro aniversario.</p>
+                        </div>
+                        
+                        <div class="form-group-premium">
+                            <div class="input-label-premium">
+                                <i class="fas fa-user-circle"></i>
+                                <span>INGRESA TU NOMBRE COMPLETO</span>
+                            </div>
+                            <input type="text" 
+                                   id="nameInput" 
+                                   class="input-premium" 
+                                   placeholder="Ej: Juan Pérez Mendoza"
+                                   maxlength="40"
+                                   autocomplete="off">
+                            <div class="input-note">(Aparecerá en tu invitación del 23° aniversario)</div>
+                        </div>
+                        
+                        <div class="form-info">
+                            <i class="fas fa-info-circle"></i>
+                            <p><strong>¡Únete a la celebración!</strong> Tu nombre aparecerá en una tarjeta digital premium 
+                            con todos los detalles del evento. Esta invitación es para celebrar juntos nuestro 23° aniversario 
+                            como bloque Harakmbut "Leones de Fuego".</p>
+                        </div>
+                        
+                        <button class="btn-premium-generate" id="generateBtn">
+                            <div class="btn-content">
+                                <i class="fas fa-fire"></i>
+                                <span>CREAR MI INVITACIÓN 23° ANIVERSARIO</span>
+                            </div>
+                            <div class="btn-sparkles"></div>
+                        </button>
+                        
+                        <!-- RESULTADO -->
+                        <div class="result-premium" id="resultContainer">
+                            <div class="success-animation-premium">
+                                <div class="success-icon-premium">
+                                    <i class="fas fa-crown"></i>
+                                </div>
+                                <h4><i class="fas fa-check"></i> ¡INVITACIÓN LISTA!</h4>
+                                <p>Tu pase para el 23° aniversario ha sido generado exitosamente</p>
+                                
+                                <button class="btn-premium-download" id="downloadBtn">
+                                    <div class="download-content">
+                                        <i class="fas fa-download"></i>
+                                        <span>haz clic aqui para descargar la invitacion</span>
+                                    </div>
+                                    <div class="download-effect"></div>
+                                </button>
+                                
+                                <div class="download-instructions">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>Guarda la imagen en tu celular. Es tu entrada para las celebraciones del aniversario.</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="security-premium">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Esta invitación es personal e intransferible. Solo para integrantes activos del bloque Harakmbut.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE HISTORIA CON TIMELINE -->
+    <section class="history-section" id="historia">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-underline">NUESTRA</span>
+                    <span class="title-highlight">HISTORIA HARAKMBUT</span>
+                </h2>
+            </div>
+            
+            <div class="timeline-epic">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2003</div>
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-birthday-cake"></i> NACIMIENTO DEL FUEGO</h3>
+                        <p>Fundación oficial del bloque "Leones de Fuego Harakmbut" en San Jerónimo, con integrantes visionarios.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2008</div>
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-trophy"></i> PRIMEROS TRIUNFOS</h3>
+                        <p>Primera presentación masiva en festival regional, ganando reconocimiento inmediato como bloque.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2015</div>
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-award"></i> CONSOLIDACIÓN</h3>
+                        <p>Expansión a 100+ integrantes y participación en eventos nacionales importantes como bloque Harakmbut.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-users"></i> RESILIENCIA</h3>
+                        <p>Superamos la pandemia manteniendo viva la tradición con ensayos virtuales del bloque.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2026</div>
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-crown"></i> 23 AÑOS DE GLORIA</h3>
+                        <p>Celebramos 23 años de pasión, dedicación y fuego inagotable como bloque Leones de Fuego Harakmbut.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA DE FOTOS -->
+    <section class="gallery-section" id="galeria">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-gold">MOMENTOS</span>
+                    <span class="title-fire">HARAKMBUT</span>
+                </h2>
+                <p class="section-subtitle">Capturas de nuestra trayectoria como bloque Leones de Fuego (espacio para tus fotos)</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- ESPACIO PARA 6 FOTOS -->
+                <div class="gallery-item">
+                    <img src="assets/images/foto1.jpg" alt="Foto 1 del bloque" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/foto2.jpg" alt="Foto 2 en acción" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/foto3.jpg" alt="Foto 3 premiación" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/foto4.jpg" alt="Foto 4 ensayo bloque" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/foto5.jpg" alt="Foto 5 presentación" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/foto6.jpg" alt="Foto 6 aniversario" class="gallery-image">
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN DEL EVENTO -->
+    <section class="event-section" id="evento">
+        <div class="container">
+            <div class="event-header">
+                <h2 class="event-title">
+                    <span class="event-highlight">¡TE ESPERAMOS EN SAN JERÓNIMO!</span><br>
+                    <span class="event-subtitle">CELEBRACIÓN 23° ANIVERSARIO</span>
+                </h2>
+            </div>
+            
+            <div class="event-details-container">
+                <div class="event-card pasacalle">
+                    <div class="event-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>GRAN PASACALLE ANIVERSARIO</h3>
+                    <div class="event-time">
+                        <i class="fas fa-clock"></i>
+                        <span>14:00 HORAS</span>
+                    </div>
+                    <div class="event-location">
+                        <i class="fas fa-map-pin"></i>
+                        <span>Concentración: Cajonahuaylla - San Jerónimo</span>
+                    </div>
+                    <p class="event-description">
+                        Recorrido por las principales calles de San Jerónimo mostrando nuestro fuego y tradición 
+                        del bloque Harakmbut. ¡Ven a celebrar nuestros 23 años con nosotros!
+                    </p>
+                </div>
+                
+                <div class="event-card noche">
+                    <div class="event-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>CELEBRACIÓN NOCTURNA</h3>
+                    <div class="event-time">
+                        <i class="fas fa-clock"></i>
+                        <span>19:00 HORAS</span>
+                    </div>
+                    <div class="event-location">
+                        <i class="fas fa-map-pin"></i>
+                        <span>Local Señorial - Calle Romeritos</span>
+                    </div>
+                    <p class="event-description">
+                        Cena de confraternidad, reconocimientos y celebración por nuestros 23 años como bloque 
+                        Leones de Fuego Harakmbut. ¡Celebraremos junto a otras actividades en San Jerónimo!
+                    </p>
+                </div>
+            </div>
+            
+            <div class="event-map">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h4>PUNTOS DE ENCUENTRO EN SAN JERÓNIMO</h4>
+                    <p>1. Cajonahuaylla (14:00) - 2. Local Señorial (19:00)</p>
+                    <p><strong>¡Evento se realizará junto a otras actividades culturales!</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER PREMIUM -->
+    <footer class="premium-footer">
+        <div class="container">
+            <div class="footer-content-premium">
+                <div class="footer-brand">
+                    <h3 class="footer-title">
+                        <span class="footer-gold">LEONES DE FUEGO</span>
+                        <span class="footer-fire">HARAKMBUT</span>
+                    </h3>
+                    <p class="footer-subtitle">Bloque Cultural - San Jerónimo</p>
+                    <div class="footer-flames">
+                        <i class="fas fa-fire"></i>
+                        <i class="fas fa-fire"></i>
+                        <i class="fas fa-fire"></i>
+                    </div>
+                </div>
+                
+                <div class="footer-info">
+                    <div class="footer-contact">
+                        <h4><i class="fas fa-users"></i> BLOQUE HARAKMBUT</h4>
+                        <p>200+ leones manteniendo viva la tradición desde 2003</p>
+                    </div>
+                    
+                    <div class="footer-social">
+                        <h4><i class="fas fa-share-alt"></i> CONÉCTATE CON EL BLOQUE</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-credits">
+                    <div class="credits-content">
+                        <i class="fas fa-heart"></i>
+                        <p>Celebrando 23 años de pasión y cultura del bloque Harakmbut</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom-premium">
+                <div class="copyright">
+                    <p>© 2003-2026 Leones de Fuego Harakmbut - Bloque Cultural. Todos los derechos reservados.</p>
+                </div>
+                <div class="developer-credit">
+                    <p>
+                        <i class="fas fa-code"></i>
+                        Página creada con ❤️ por <span class="developer-name">Rivaldo HS</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
